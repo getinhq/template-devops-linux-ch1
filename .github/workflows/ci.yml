@@ -5,9 +5,10 @@ on:
   push:
     branches: [main]
 jobs:
-  shellcheck:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update && sudo apt-get install -y shellcheck
       - run: shellcheck bootstrap.sh
+      - run: chmod +x bootstrap.sh && ./bootstrap.sh

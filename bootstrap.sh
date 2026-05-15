@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# TODO: implement for Ubuntu/Debian
-true
+# TODO: install packages and create sudo user per README
+echo "Not implemented" >&2
+exit 1
